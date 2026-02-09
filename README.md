@@ -1,11 +1,31 @@
-<div align="center">
+# AI Waste Management Hero Component
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+This project exports a high-performance, standalone React component visualizing an AI-driven system process. It features a central CPU node pulsing with activity, connected via animated data pipelines to input sensors and output optimization metrics. The component mimics a futuristic dashboard tile, using particle effects and smooth counting animations to represent system efficiency gains.
 
-  <h1>Built with AI Studio</h2>
+## Tech Stack
+- **React 18+**: Core framework.
+- **Tailwind CSS**: For all styling, including gradients, glassmorphism, and responsive layouts.
+- **Framer Motion**: For complex SVG path animations, entry transitions, and continuous breathing effects.
+- **Lucide React**: For consistent, high-quality SVG iconography.
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## Usage
+1. Copy `components/SystemsProcessTile.tsx` into your project.
+2. Ensure you have `framer-motion` and `lucide-react` installed:
+   ```bash
+   npm install framer-motion lucide-react
+   ```
+3. Import and use the component in any page:
+   ```tsx
+   import SystemsProcessTile from './components/SystemsProcessTile';
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+   export default function Page() {
+     return (
+       <div className="h-screen flex items-center justify-center bg-black">
+         <SystemsProcessTile />
+       </div>
+     );
+   }
+   ```
 
-</div>
+## Animation Details
+The component uses SVG `<motion.path>` elements to draw connecting lines, while `<motion.animateMotion>` moves particles along these Bezier curves to simulate data ingress and egress. The central efficiency metric counts up from 0 to 27% using a custom Javascript interval hook for smooth performance.
