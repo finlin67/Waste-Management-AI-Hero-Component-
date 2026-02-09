@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import SystemsProcessTile from './components/SystemsProcessTile';
+import WasteMan from './components/WasteMan';
 
 export default function App() {
   return (
@@ -14,7 +14,7 @@ export default function App() {
         requested in the prompt. It is self-contained and handles all internal 
         logic and responsiveness.
       */}
-      <SystemsProcessTile />
+      <WasteMan />
     </div>
   );
 }

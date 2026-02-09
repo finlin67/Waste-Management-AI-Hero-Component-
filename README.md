@@ -9,19 +9,19 @@ This project exports a high-performance, standalone React component visualizing 
 - **Lucide React**: For consistent, high-quality SVG iconography.
 
 ## Usage
-1. Copy `components/SystemsProcessTile.tsx` into your project.
+1. Copy `components/WasteMan.tsx` into your project.
 2. Ensure you have `framer-motion` and `lucide-react` installed:
    ```bash
    npm install framer-motion lucide-react
    ```
 3. Import and use the component in any page:
    ```tsx
-   import SystemsProcessTile from './components/SystemsProcessTile';
+   import WasteMan from './components/WasteMan';
 
    export default function Page() {
      return (
        <div className="h-screen flex items-center justify-center bg-black">
-         <SystemsProcessTile />
+         <WasteMan />
        </div>
      );
    }
